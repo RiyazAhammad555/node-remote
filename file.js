@@ -1,0 +1,8 @@
+const path=require('path')
+const {readFileSync,writeFileSync}=require('fs')
+const file=path.join(__dirname,'files','read.txt')
+const w_file=path.join(__dirname,'files','write.txt')
+const read_cont=readFileSync(file,'utf-8')
+// console.log(read_cont)
+const write_cont=writeFileSync(w_file,read_cont)
+console.log('execution done')

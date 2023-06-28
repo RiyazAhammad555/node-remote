@@ -1,0 +1,6 @@
+const path=require('path')
+console.log(path.sep)
+const filePath=path.join('/ok','directory','there.js')
+console.log(path.basename(filePath))
+const abs=path.resolve(__dirname,'cont','ok','path.js')
+console.log(typeof abs)
